@@ -48,7 +48,7 @@ module.exports = {
     contentBase: path.join(__dirname, "dist"),
     compress: true,
     port: PORT,
-    publicPath: `http://localhost:${PORT}/dist`,
+    // publicPath: `http://localhost:${PORT}/dist`,
     hotOnly: true
   }
 };
