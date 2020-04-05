@@ -2,6 +2,8 @@ require("dotenv").config();
 const webpack = require("webpack");
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+
 
 const PORT = process.env.port || 3000;
 
@@ -20,6 +22,7 @@ module.exports = {
   },
   devtool: "inline-source-map",
   plugins: [
+    new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       title: "React Webpack Template",
