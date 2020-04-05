@@ -3,7 +3,6 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
-
 module.exports = {
   entry: {
     main: "./src/index.js",
@@ -32,7 +31,10 @@ module.exports = {
         loader: "babel-loader",
         options: {
           presets: ["@babel/preset-env", "@babel/preset-react"],
-          plugins: ["react-hot-loader/babel"],
+          plugins: [
+            "react-hot-loader/babel",
+            "@babel/plugin-transform-runtime",
+          ],
         },
       },
       {
