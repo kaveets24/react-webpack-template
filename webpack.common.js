@@ -9,9 +9,9 @@ module.exports = {
   },
   output: {
     // `filename` provides a template for naming your bundles (remember to use `[name]`)
-    filename: "[hash].bundle.js",
+    filename: "[fullhash].bundle.js",
     // `chunkFilename` provides a template for naming code-split bundles (optional)
-    chunkFilename: "[hash].bundle.js",
+    chunkFilename: "[chunkhash].chunk.js",
     // `path` is the folder where Webpack will place your bundles
     path: path.resolve(__dirname, "dist"),
   },
