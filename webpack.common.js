@@ -43,5 +43,12 @@ module.exports = {
       },
     ],
   },
-  resolve: { extensions: ["*", ".js", ".jsx", ".scss", ".sass"] },
+  resolve: {
+    extensions: ["*", ".js", ".jsx", ".scss", ".sass"],
+    alias: {
+      components: path.resolve(__dirname, "src/components/"),
+      pages: path.resolve(__dirname, "src/pages/"),
+      utils: path.resolve(__dirname, "src/utils/"),
+    },
+  },
 };

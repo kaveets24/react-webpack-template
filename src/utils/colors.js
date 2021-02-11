@@ -1,0 +1,10 @@
+const colors = {
+  grey: "#f9f8f8",
+  white: "white",
+  black: "#272838",
+  yellow: "#f3de8a",
+  red: "#eb9486",
+  blue: "#7e7f9a",
+};
+
+export default colors;
